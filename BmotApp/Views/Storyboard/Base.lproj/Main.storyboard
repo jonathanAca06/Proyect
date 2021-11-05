@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="QE2-Nb-iwk">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Tab Bar Controller-->
+        <scene sceneID="0SB-U0-sFv">
+            <objects>
+                <tabBarController id="QE2-Nb-iwk" sceneMemberID="viewController">
+                    <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" translucent="NO" id="2sE-gS-rZP">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="49"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <color key="barTintColor" red="1" green="0.83234566450000003" blue="0.47320586440000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <color key="selectedImageTintColor" systemColor="labelColor"/>
+                    </tabBar>
+                    <connections>
+                        <segue destination="IV2-wC-iAT" kind="relationship" relationship="viewControllers" id="kXL-Cc-6kI"/>
+                        <segue destination="iVR-wl-yCu" kind="relationship" relationship="viewControllers" id="EqO-DU-3tx"/>
+                        <segue destination="Isk-hi-55T" kind="relationship" relationship="viewControllers" id="qPM-x1-q8n"/>
+                    </connections>
+                </tabBarController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkO-7t-OxY" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-2620" y="-164"/>
+        </scene>
+        <!--Inicio-->
+        <scene sceneID="Ia0-45-BLq">
+            <objects>
+                <navigationController id="IV2-wC-iAT" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Inicio" image="house" catalog="system" id="4d5-RL-3C8"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="2wn-90-YE8">
+                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="jCu-5D-lG8" kind="relationship" relationship="rootViewController" id="1fQ-vl-b3f"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="gzY-dy-Fly" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-3358" y="558"/>
+        </scene>
+        <!--Bienvenido-->
+        <scene sceneID="sJZ-tK-NIR">
+            <objects>
+                <viewController id="jCu-5D-lG8" customClass="HomeViewController" customModule="BmotApp" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="pw6-SF-xN2">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="813"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <viewLayoutGuide key="safeArea" id="dPC-5P-bJb"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="Bienvenido" id="ZYK-yg-Wve"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="NEZ-tO-92U" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-3359" y="1304"/>
+        </scene>
+        <!--Juegos-->
+        <scene sceneID="enK-wL-ouG">
+            <objects>
+                <navigationController id="iVR-wl-yCu" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Juegos" image="gamecontroller" catalog="system" id="AsM-pV-Vx1"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="emz-rn-z0o">
+                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="Y1s-n2-HBg" kind="relationship" relationship="rootViewController" id="lgz-ul-fhV"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ZsY-gs-7Q9" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-2407" y="577"/>
+        </scene>
+        <!--Chat Bot-->
+        <scene sceneID="cNf-Ta-gn2">
+            <objects>
+                <navigationController id="Isk-hi-55T" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Chat Bot" image="text.bubble" catalog="system" id="bdM-Fb-Pet"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="fkE-vi-edF">
+                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="6Kq-cH-zJE" kind="relationship" relationship="rootViewController" id="OLk-qD-ECV"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="USv-Nj-KyA" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-1449" y="558"/>
+        </scene>
+        <!--Juegos-->
+        <scene sceneID="HPo-u6-C7X">
+            <objects>
+                <viewController id="Y1s-n2-HBg" customClass="GamesViewController" customModule="BmotApp" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="dTx-uW-36Y">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="813"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <viewLayoutGuide key="safeArea" id="na7-s4-kle"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="Juegos" id="OF1-Ca-t3E"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="E5i-BV-4to" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-2407" y="1323"/>
+        </scene>
+        <!--Chat Bot-->
+        <scene sceneID="c3W-ck-Bxs">
+            <objects>
+                <viewController id="6Kq-cH-zJE" customClass="ChatBotViewController" customModule="BmotApp" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="P4l-3l-L8e">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="813"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <viewLayoutGuide key="safeArea" id="fZ9-DY-50Y"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="Chat Bot" id="KEF-RS-gFf"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="6Gp-kw-kqc" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-1449" y="1323"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="gamecontroller" catalog="system" width="128" height="80"/>
+        <image name="house" catalog="system" width="128" height="106"/>
+        <image name="text.bubble" catalog="system" width="128" height="110"/>
+        <systemColor name="labelColor">
+            <color white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
