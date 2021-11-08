@@ -162,7 +162,7 @@
                             </collectionView>
                             <imageView userInteractionEnabled="NO" alpha="0.80000001192092896" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="mesa_fondo" translatesAutoresizingMaskIntoConstraints="NO" id="zvY-9u-0Kg">
                                 <rect key="frame" x="0.0" y="316" width="414" height="430"/>
-                                <color key="backgroundColor" red="1" green="0.5738133153805508" blue="0.32368129257420653" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                             </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Seleccione las rebanas :D" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="CPE-rj-qeG">
                                 <rect key="frame" x="0.0" y="281" width="400" height="30"/>
@@ -248,10 +248,20 @@
                                     <action selector="playButton:" destination="yQI-Ea-Uny" eventType="touchUpInside" id="4aB-RW-gej"/>
                                 </connections>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Wk8-qi-0wW">
+                                <rect key="frame" x="269" y="768" width="63" height="26"/>
+                                <state key="normal" title="reset">
+                                    <imageReference key="image" image="arrow.clockwise" catalog="system" symbolScale="large"/>
+                                </state>
+                                <connections>
+                                    <action selector="resetButton:" destination="yQI-Ea-Uny" eventType="touchUpInside" id="aeI-xj-lMW"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="RGw-x2-7aU"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
+                            <constraint firstItem="RGw-x2-7aU" firstAttribute="trailing" secondItem="Wk8-qi-0wW" secondAttribute="trailing" constant="82" id="3eV-Jj-BHJ"/>
                             <constraint firstItem="VZ4-F1-J1C" firstAttribute="top" secondItem="RGw-x2-7aU" secondAttribute="top" constant="8" id="4aV-k3-smr"/>
                             <constraint firstItem="RGw-x2-7aU" firstAttribute="trailing" secondItem="VZ4-F1-J1C" secondAttribute="trailing" constant="14" id="6sH-P3-tN3"/>
                             <constraint firstItem="CPE-rj-qeG" firstAttribute="leading" secondItem="00E-Pn-aSu" secondAttribute="leading" id="GNn-ZR-YSU"/>
@@ -264,7 +274,9 @@
                             <constraint firstItem="CPE-rj-qeG" firstAttribute="trailing" secondItem="00E-Pn-aSu" secondAttribute="trailing" constant="-14" id="duk-Lf-kyu"/>
                             <constraint firstItem="VZ4-F1-J1C" firstAttribute="leading" secondItem="CPE-rj-qeG" secondAttribute="leading" id="fzV-PG-uS4"/>
                             <constraint firstItem="CPE-rj-qeG" firstAttribute="top" secondItem="VZ4-F1-J1C" secondAttribute="bottom" constant="10" id="glw-AG-qLA"/>
+                            <constraint firstItem="Wk8-qi-0wW" firstAttribute="baseline" secondItem="6qa-Xp-bn3" secondAttribute="baseline" id="hPw-QM-Ns3"/>
                             <constraint firstItem="oLg-J9-ctj" firstAttribute="top" secondItem="6qa-Xp-bn3" secondAttribute="top" constant="4" id="mfD-As-BRN"/>
+                            <constraint firstItem="Wk8-qi-0wW" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="oLg-J9-ctj" secondAttribute="trailing" constant="8" symbolic="YES" id="mwY-a0-v4e"/>
                             <constraint firstItem="oLg-J9-ctj" firstAttribute="top" secondItem="00E-Pn-aSu" secondAttribute="bottom" constant="24" id="oaw-U4-wcB"/>
                             <constraint firstItem="VZ4-F1-J1C" firstAttribute="leading" secondItem="UwX-td-bXh" secondAttribute="leading" id="ra3-uQ-BY1"/>
                             <constraint firstAttribute="trailing" secondItem="zvY-9u-0Kg" secondAttribute="trailing" id="tTS-yj-ZDi"/>
@@ -278,6 +290,7 @@
                     <connections>
                         <outlet property="collectionview_1" destination="VZ4-F1-J1C" id="Q6u-1X-WF2"/>
                         <outlet property="collectionview_2" destination="00E-Pn-aSu" id="Pq9-ic-xxP"/>
+                        <outlet property="fondo_imageView" destination="zvY-9u-0Kg" id="bfM-Pj-gGg"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Y9W-qH-sLU" sceneMemberID="firstResponder"/>
@@ -303,6 +316,7 @@
         </scene>
     </scenes>
     <resources>
+        <image name="arrow.clockwise" catalog="system" width="115" height="128"/>
         <image name="felicidad" width="142" height="142"/>
         <image name="gamecontroller" catalog="system" width="128" height="80"/>
         <image name="house" catalog="system" width="128" height="106"/>
